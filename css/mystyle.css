@@ -1,0 +1,289 @@
+/* Nav bar */
+#logo {
+  height: 50px;
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  background-color: #DDE1E2;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: fixed;
+  z-index:100;
+}
+
+.brand {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.menu {
+  display: inline-block;
+  height: 100%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding: 20 15 0 15;
+  height: 100%;
+}
+
+.menu ul li:hover {
+  background-color: #fff;
+}
+
+.menu ul li a {
+  color: #000;
+}
+
+.menu ul li a:hover {
+  text-decoration: none;
+  color: #5A5A5A;
+}
+
+.menu ul li i {
+  width: 20px;
+  font-size: 15px;
+}
+
+/* Motto */
+.motto {
+  padding-top: 60px;
+  width: 100%;
+  height: 700px;
+  max-height: 100%;
+  background-image: url('../img/desk.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.motto h1 {
+  margin-top: 200px;
+  border-top: 1px solid #428bca;
+  border-bottom: 1px solid #428bca;
+  background-color: rgba(255, 255, 255, .3);
+  word-spacing: 10px;
+  letter-spacing: 5px;
+  color: #428bca;
+  font-size: 30px;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+  padding: 10 0 10 0;
+}
+
+.motto h1:hover {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  background-color: rgba(66, 139, 202, .7);
+}
+
+.motto ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.motto ul li a {
+  border: 1px solid #428bca;
+  padding: 10 20 10 20;
+  border-radius: 10px;
+  min-width: 100px;
+  width: auto;
+  margin: 10px;
+  font-size: 20px;
+  color: #428bca;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.motto ul li a:hover {
+  background-color: rgba(66, 139, 202, .7);
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+}
+
+.motto ul li a i {
+  width: 30px;
+}
+
+/* About */
+.about {
+  width: 100%;
+  min-height: 600px;
+  height: auto;
+  padding-top: 50px;
+}
+
+.avatar {
+  height: 500px;
+  text-align: center;
+  background-color: rgba(37, 92, 105, .1);
+  padding-top: 30px;
+}
+
+
+.avatar img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.avatar p {
+  text-align: left;
+}
+
+.avatar p i {
+  width: 30px;
+}
+
+.bio {
+  background-color: rgba(37, 92, 105, .1);
+  overflow: auto;
+  height: 500px;
+  text-align: center;
+  padding: 20px;
+}
+
+.bio h3 i {
+  font-size: 20px;
+  width: 50px;
+}
+
+/* Projects */
+.projects {
+  min-height: 400px;
+  height: auto;
+  background-color: rgba(46, 65, 114, .1);
+}
+
+.work1 {
+  padding: 30px;
+  height: 400px;
+  text-align: center;
+}
+
+.work2 {
+  padding: 30px;
+  height: 400px;
+  text-align: center;
+  background-color: rgba(6, 21, 57, .2);
+}
+.work3 {
+  padding: 30px;
+  height: 400px;
+  text-align: center;
+}
+
+.icons {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+/*.description {
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+*/
+
+/* Footer */
+footer {
+  min-height: 80px;
+  height: auto;
+}
+
+.social-media {
+  height: 80px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.social-media ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media ul li{
+  display: inline-block;
+}
+
+.social-media ul li a i {
+  font-size: 30px;
+  width: 50px;
+  color: #000;
+}
+
+.social-media ul li a i:hover {
+  color: #103D50;
+}
+
+.copyright {
+  height: 80px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+/* Responsiveness */
+@media screen and (max-width: 800px) {
+
+  /* Nav Menu */
+  .menu ul li a span {
+    display: none;
+  }
+
+  .menu ul li i {
+    font-size: 22px;
+  }
+
+  /* Motto */
+  .motto h1 {
+    margin-top: 100px;
+    font-size: 20px;
+  }
+
+  .motto ul li a{
+    display: block;
+  }
+
+  /* About */
+  .about {
+    padding: 50px;
+  }
+
+  .avatar {
+    margin-bottom: 50px;
+  }
+
+  /* Footer */
+  .copyright {
+    padding-top: 0;
+  }
+
+  .copyright p {
+    border-top: 1px solid silver;
+    padding-top: 20px;
+  }
+
+}
