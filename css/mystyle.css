@@ -61,7 +61,7 @@ nav {
   padding-top: 60px;
   width: 100%;
   height: 700px;
-  max-height: 100%;
+  /*max-height: 100%;*/
   background-image: url('../img/desk.jpg');
   background-position: center center;
   background-size: cover;
@@ -71,23 +71,15 @@ nav {
 
 .motto h1 {
   margin-top: 200px;
-  border-top: 1px solid #428bca;
-  border-bottom: 1px solid #428bca;
-  background-color: rgba(255, 255, 255, .3);
   word-spacing: 10px;
   letter-spacing: 5px;
-  color: #428bca;
+  background-color: rgba(255, 255, 255, .6);
+  color: #042037;
   font-size: 30px;
-  font-family: sans-serif;
+  font-family: cursive;
   margin-bottom: 50px;
   padding: 10 0 10 0;
-}
-
-.motto h1:hover {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  background-color: rgba(66, 139, 202, .7);
+  font-weight: bold;
 }
 
 .motto ul {
@@ -98,19 +90,19 @@ nav {
 
 
 .motto ul li a {
-  border: 1px solid #428bca;
+  border: 1px solid #042037;
   padding: 10 20 10 20;
   border-radius: 10px;
   min-width: 100px;
   width: auto;
   margin: 10px;
   font-size: 20px;
-  color: #428bca;
+  color: #042037;
   background-color: rgba(255, 255, 255, .5);
 }
 
 .motto ul li a:hover {
-  background-color: rgba(66, 139, 202, .7);
+  background-color: rgba(4, 32, 55, .7);
   border: 1px solid #fff;
   color: #fff;
   text-decoration: none;
@@ -120,91 +112,139 @@ nav {
   width: 30px;
 }
 
+/* Quotes */
+.quotes {
+  height: 80px;
+}
+
+.quotes div {
+  height: 100%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.quotes div h3 {
+  font-family: cursive;
+  color: #3D3D3D;
+}
+
 /* About */
 .about {
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
   height: auto;
-  padding-top: 50px;
 }
 
 .avatar {
   height: 500px;
-  text-align: center;
-  background-color: rgba(37, 92, 105, .1);
-  padding-top: 30px;
-}
-
-
-.avatar img {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-
-.avatar p {
-  text-align: left;
-}
-
-.avatar p i {
-  width: 30px;
+  background-image: url('../img/avatar2.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bio {
-  background-color: rgba(37, 92, 105, .1);
+  background-color: #F0F0F0;
   overflow: auto;
   height: 500px;
-  text-align: center;
-  padding: 20px;
+  text-align: left;
 }
 
-.bio h3 i {
-  font-size: 20px;
-  width: 50px;
+.bio h2 {
+  font-family: Verdana;
+  color: #3D3D3D;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+#bio-info {
+  font-family: cursive;
+  color: #3D3D3D;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 20px;
+  text-align:justify;
+}
+
+.bio p {
+  font-family: cursive;
+  color: #3D3D3D;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 20px;
+  text-align: right;
+}
+
+/* Hobbies */
+.hobbies {
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+}
+
+.hobbie {
+  height: 500px;
+  background-image: url('../img/old.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Projects */
 .projects {
   min-height: 400px;
   height: auto;
-  background-color: rgba(46, 65, 114, .1);
+  background-color: #fff;
+  padding: 30px 0 20px 0;
 }
 
 .work1 {
   padding: 30px;
-  height: 400px;
+  height: auto;
   text-align: center;
+  border-right: 1px solid silver;
 }
 
 .work2 {
   padding: 30px;
-  height: 400px;
+  height: auto;
   text-align: center;
-  background-color: rgba(6, 21, 57, .2);
+  border-right: 1px solid silver;
 }
+
 .work3 {
   padding: 30px;
-  height: 400px;
+  height: auto;
   text-align: center;
 }
 
 .icons {
   width: 100px;
-  border-radius: 50%;
   margin-bottom: 30px;
 }
 
-/*.description {
-  color: #fff;
-  margin-left: 10px;
-  margin-right: 10px;
+.description {
+  font-family: cursive;
+  text-align:justify;
+  color: #191919;
 }
-*/
+
+.description:hover {
+  /*background-color: rgba(65, 131, 196, .6);*/
+  background-color: #337ab7;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+}
 
 /* Footer */
 footer {
-  min-height: 80px;
+  min-height: 500px;
   height: auto;
+  background-color: #DDE1E2;
+  /*border: 1px solid blue;*/
 }
 
 .social-media {
@@ -229,8 +269,24 @@ footer {
   color: #000;
 }
 
-.social-media ul li a i:hover {
-  color: #103D50;
+#facebook:hover {
+  color: #3b5998;
+}
+
+#twitter:hover{
+  color: #00aced;
+}
+
+#google:hover {
+  color: #d34836;
+}
+
+#github:hover {
+  color: #4183c4;
+}
+
+#mail:hover {
+  color: #7B0099;
 }
 
 .copyright {
@@ -242,7 +298,62 @@ footer {
 .copyright p {
   font-size: 15px;
   font-weight: bold;
+}
 
+.contact-form {
+  margin: 0;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#email {
+  width: 40%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-left: 3px solid #337ab7;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  font-family: cursive;
+  color: rgba(0, 0, 0, .5);
+}
+
+#message {
+  width: 40%;
+  height: 250px;
+  margin-bottom: 20px;
+  resize: none;
+  border-left: 3px solid #337ab7;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  font-family: cursive;
+  color: rgba(0, 0, 0, .5);
+}
+
+.breadcrumb {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.active {
+  color: #fff;
+}
+
+.breadcrumb > .active {
+  color: #032136;
+}
+
+.breadcrumb li a {
+  color: #fff;
+}
+
+label {
+  display: block;
+  font-family: cursive;
+  color: rgba(0, 0, 0, .7);
 }
 
 /* Responsiveness */
@@ -267,13 +378,16 @@ footer {
     display: block;
   }
 
-  /* About */
-  .about {
-    padding: 50px;
+
+  /* Projects */
+  .work1 {
+    border-right: none;
+    border-bottom: 1px solid silver;
   }
 
-  .avatar {
-    margin-bottom: 50px;
+  .work2 {
+    border-right: none;
+    border-bottom: 1px solid silver;
   }
 
   /* Footer */
@@ -284,6 +398,24 @@ footer {
   .copyright p {
     border-top: 1px solid silver;
     padding-top: 20px;
+  }
+
+  /* Contact */
+  #email {
+    width: 95%;
+  }
+
+  #message {
+    width: 95%;
+    /*height: 250px;*/
+  }
+
+  .breadcrumb {
+    width: 95%;
+  }
+
+  .contact-form {
+    padding-right: 0;
   }
 
 }
