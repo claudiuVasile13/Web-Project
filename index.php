@@ -21,16 +21,16 @@
 		</div>
 		<div class="menu pull-right">
 			<ul>
-				<li><i class="fa fa-home"></i><a href=""><span>Home</span></a></li>
-				<li><i class="fa fa-info-circle"></i><a href=""><span>About</span></a></li>
-				<li><i class="fa fa-cog"></i><a href=""><span>Project</span></a></li>
-				<li><i class="fa fa-globe"></i><a href=""><span>Media</span></a></li>
+				<li><i class="fa fa-home"></i><a href="#motto"><span>Home</span></a></li>
+				<li><i class="fa fa-info-circle"></i><a href="#about"><span>About</span></a></li>
+				<li><i class="fa fa-cog"></i><a href="#projects"><span>Project</span></a></li>
+				<li><i class="fa fa-globe"></i><a href="#media"><span>Media</span></a></li>
 			</ul>
 		</div>
 	</nav>
 
 <!-- Motto -->
-	<div class="motto">
+	<div class="motto" id="motto">
 		<h1>Everything starts with a small step in first time</h1>
 		<ul>
 			<li>
@@ -52,7 +52,7 @@
 	</div>
 
 <!-- About -->
-	<div class="row-fluid about">
+	<div class="row-fluid about" id="about">
 		<div class="col-lg-6 avatar">
 		</div>
 		<div class="col-lg-6 bio">
@@ -73,7 +73,7 @@
 	</div>
 
 <!-- Projects -->
-	<div class="row-fluid projects">
+	<div class="row-fluid projects" id="projects">
 		<div class="col-lg-4 work1">
 			<img class="icons" src="img/android.jpg" alt="Work1" />
 			<p class="description">A wiki is not a carefully crafted site for casual visitors. Instead, it seeks to involve the visitor in an ongoing process of creation and collaboration that constantly changes the Web site landscape.collaboration that constantly changes the Web site landscape.</p>
@@ -89,7 +89,7 @@
 	</div>
 
 <!-- Footer -->
-	<footer>
+	<footer id="media">
 		<div class="row-fluid media">
 			<div class="col-lg-6 social-media">
 				<ul>
@@ -105,24 +105,34 @@
 			</div>			
 		</div>
 		<div class="row contact-form">
-			<div class="col-lg-12 contact">
+			<div class="col-lg-6 contact">
 				<ol class="breadcrumb">
-				  	<li><a href="index.html">Home</a></li>
+				  	<li><a href="index.php">Home</a></li>
 				  	<li class="active">Contact</li>
 				</ol>	
-				<form>
+				<form action="php/email/email.php" method="POST">
 					<label for="email">Email:</label>
-	  				<input type="email" name="mail" id="email" placeholder="your_email@yahoo.com" required><br>
+	  				<input type="email" name="email" id="email" placeholder="your_email@yahoo.com" required><br>
+	  				<label for="subject">Subject:</label>
+	  				<input type="text" name="subject" id="subject" placeholder="Type the subject" required><br>
 	  				<label for="message">Message:</label>
-	  				<textarea id="message" placeholder="Type your message here..." required></textarea><br>
+	  				<textarea name="message" id="message" placeholder="Type your message here..." required></textarea><br>
 	  				<input class="btn btn-primary" type="submit" value="Send">
 				</form>
 			</div>
+			<div class="col-lg-6 googleMap">
+				<ol class="breadcrumb">
+				  	<li><a href="index.php">Home</a></li>
+				  	<li class="active">Your Location</li>
+				</ol>
+				<div id="map"></div>
+				<p id="coord"></p>
+			</div>
 		</div>
 	</footer>
-
+<script src="js/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
 </body>
-
 </html>

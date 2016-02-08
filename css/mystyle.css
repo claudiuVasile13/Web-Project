@@ -304,12 +304,24 @@ footer {
   margin: 0;
   padding-bottom: 50px;
   padding-top: 50px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 6%;
+  /*padding-right: 4%;*/
 }
 
 #email {
-  width: 40%;
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-left: 3px solid #337ab7;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  font-family: cursive;
+  color: rgba(0, 0, 0, .5);
+}
+
+#subject {
+  width: 80%;
   padding: 5px;
   margin-bottom: 20px;
   border-left: 3px solid #337ab7;
@@ -321,7 +333,8 @@ footer {
 }
 
 #message {
-  width: 40%;
+  width: 80%;
+  padding: 5px;
   height: 250px;
   margin-bottom: 20px;
   resize: none;
@@ -333,9 +346,15 @@ footer {
   color: rgba(0, 0, 0, .5);
 }
 
+#map {
+  width: 80%;
+  height: 424px;
+}
+
 .breadcrumb {
     background-color: #337ab7;
     border-color: #2e6da4;
+    width: 80%;
 }
 
 .active {
@@ -405,6 +424,10 @@ label {
     width: 95%;
   }
 
+  #subject {
+    width: 95%;
+  }
+
   #message {
     width: 95%;
     /*height: 250px;*/
@@ -416,6 +439,10 @@ label {
 
   .contact-form {
     padding-right: 0;
+  }
+
+  #map {
+    width: 95%;
   }
 
 }
