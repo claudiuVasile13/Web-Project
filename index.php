@@ -31,18 +31,35 @@
 
 <!-- Motto -->
 	<div class="motto" id="motto">
-		<h1>Everything starts with a small step in first time</h1>
 		<ul>
 			<li>
-				<a href="#"><i class="fa fa-envelope"></i>Mail</a>
-				<a href="#"><i class="fa fa-github"></i>Github</a>
-				<a href="#"><i class="fa fa-facebook-square"></i>Facebook</a>
-				<a href="#"><i class="fa fa-google-plus-square"></i>Google</a>
-				<a href="#"><i class="fa fa-twitter-square"></i>Twitter</a>
+				<a id="register" href="#"><i class="fa fa-book"></i>Register</a>
+				<a id="sign-in" href="#"><i class="fa fa-user"></i>Sign In</a>
 			</li>
 		</ul>
 	</div>
 	</div>
+
+<!-- Auth Forms -->
+	<!-- Register -->
+	<div class="register">
+		<form id="form-register">
+			<div id="top">
+				<img src="img/exit.png" alt="Exit" id="exit" />
+				<h3>Create Account</h3>
+			</div>
+			<!-- <hr><br/> -->
+			<br/>
+			<label>Email:</label>
+			<input type="email" name="email" placeholder="exapmle@gmail.com" required /><br/>
+			<label>Username:</label>
+			<input type="text" name="username" placeholder="Username" required /><br/>
+			<label>Password:</label>
+			<input type="password" name="password" placeholder="***********" required /><br/>
+			<input type="submit" name="register-button" value="Register" id="register-button" /><br/>
+		</form>
+	</div>
+	<div class="signIn"></div>
 
 <!-- Quotes -->
 	<div class="row-fluid quotes">
@@ -133,6 +150,7 @@
 <script src="js/map.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/auth.js"></script>
 <script src="js/bootstrap.js"></script>
 </body>
 </html>
