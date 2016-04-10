@@ -14,22 +14,21 @@
 </head>
 
 <body>
-<!-- Nav Bar -->
+<!-- Motto -->
+	<!-- Nav Bar -->
 	<nav>
-		<div class="brand">
-			<img id="logo" src="img/logo.png" alt="Logo" />
-		</div>
-		<div class="menu pull-right">
+		<div class="menu">
 			<ul>
-				<li><i class="fa fa-home"></i><a href="#motto"><span>Home</span></a></li>
-				<li><i class="fa fa-info-circle"></i><a href="#about"><span>About</span></a></li>
-				<li><i class="fa fa-cog"></i><a href="#projects"><span>Project</span></a></li>
-				<li><i class="fa fa-globe"></i><a href="#media"><span>Media</span></a></li>
+				<li><a href="#motto"><i class="fa fa-home"></i><span>Home</span></a></li>
+				<li><a href="#about"><i class="fa fa-info-circle"></i><span>About</span></a></li>
+				<li><a href="#projects"><i class="fa fa-cog"></i><span>Project</span></a></li>
+				<li><a href="#media"><i class="fa fa-globe"></i><span>Media</span></a></li>
+				<li><a href="#chat"><i class="fa fa-whatsapp"></i><span>Chat</span></a></li>
+				<li><a href="#games"><i class="fa fa-gamepad"></i><span>Games</span></a></li>
 			</ul>
 		</div>
 	</nav>
-
-<!-- Motto -->
+	<!-- Wallpaper -->
 	<div class="motto" id="motto">
 		<ul>
 			<li>
@@ -37,6 +36,7 @@
 				<a id="sign-in" href="#"><i class="fa fa-user"></i>Sign In</a>
 			</li>
 		</ul>
+		<img src="img/responsive.png" alt="Responsiveness" id="responsive-img" /><br/>
 	</div>
 	</div>
 
@@ -134,7 +134,7 @@
 	  				<input type="text" name="subject" id="subject" placeholder="Type the subject" required><br>
 	  				<label for="message">Message:</label>
 	  				<textarea name="message" id="message" placeholder="Type your message here..." required></textarea><br>
-	  				<input class="btn btn-primary" type="submit" value="Send">
+	  				<input class="btn btn-primary" type="submit" value="Send" id="send">
 				</form>
 			</div>
 			<div class="col-lg-6 googleMap">
